@@ -9,6 +9,11 @@ int main()
 	sf::Texture texture;
 	texture.loadFromFile("Sprites/sprite_1.jpg");
 
+	sf::Sprite spriteTest;
+
+	spriteTest.setTexture(texture);
+
+
 	while (window.isOpen())
 	{
 		sf::Event event;
@@ -16,10 +21,24 @@ int main()
 		{
 			if (event.type == sf::Event::Closed)
 				window.close();
+
+			
 		}
 
+		if (sf::Keyboard::isKeyPressed(sf::Keyboard::D)) {
+			spriteTest.move(0.1, 0);
+		}
+
+		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Space)) {
+			spriteTest.setColor(sf::Color::Transparent);
+		}
+		else {
+			spriteTest.setColor(sf::Color::White);
+		}
+		
+
 		window.clear();
-		window.draw(shape);
+		window.draw(spriteTest);
 		window.display();
 	}
 
