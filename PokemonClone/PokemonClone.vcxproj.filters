@@ -13,18 +13,75 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\Saxion">
+      <UniqueIdentifier>{6bfbe96d-3b9d-4303-9025-26b9c9be5c49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Saxion">
+      <UniqueIdentifier>{eee5ad87-3693-4f14-a1b8-6654daf2daba}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Player.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Player.h">
+    <ClInclude Include="Headers\button.hpp">
+      <Filter>Header Files\Saxion</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\character.hpp">
+      <Filter>Header Files\Saxion</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\gameObject.hpp">
+      <Filter>Header Files\Saxion</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\quitButton.hpp">
+      <Filter>Header Files\Saxion</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\scene.hpp">
+      <Filter>Header Files\Saxion</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\sceneHandler.hpp">
+      <Filter>Header Files\Saxion</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\spriteObject.hpp">
+      <Filter>Header Files\Saxion</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\textObject.hpp">
+      <Filter>Header Files\Saxion</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\Player.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Headers\Header.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\button.cpp">
+      <Filter>Source Files\Saxion</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\character.cpp">
+      <Filter>Source Files\Saxion</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\gameObject.cpp">
+      <Filter>Source Files\Saxion</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\quitButton.cpp">
+      <Filter>Source Files\Saxion</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\scene.cpp">
+      <Filter>Source Files\Saxion</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\sceneHandler.cpp">
+      <Filter>Source Files\Saxion</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\spriteObject.cpp">
+      <Filter>Source Files\Saxion</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\textObject.cpp">
+      <Filter>Source Files\Saxion</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Player.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
