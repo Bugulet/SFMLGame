@@ -19,7 +19,7 @@ void characterAttackItself() {
 int main() {
 
 	//style::close disables resizing and maximizing
-    sf::RenderWindow window(sf::VideoMode(1280,820), "SFML with Scenes!",sf::Style::Close);
+    sf::RenderWindow window(sf::VideoMode(1280,720), "SFML with Scenes!",sf::Style::Close);
 
     Scene characterScreen("characterScreen");
     Character character("Dude", "head.png", 10, 2, 2);
