@@ -6,7 +6,8 @@
 #include "gameObject.hpp"
 
 class Scene {
-    private:
+
+    protected:
         const std::string identifier;
         std::vector<GameObject*> listOfGameObjects;
 
@@ -17,7 +18,7 @@ class Scene {
     public:
         void addGameObject(GameObject& object);
         void handleEvent(const sf::Event& event, sf::RenderWindow& window);
-        void update();
+        virtual void update();
         void render(sf::RenderWindow& window);
 
         std::string getIdentifier() const;

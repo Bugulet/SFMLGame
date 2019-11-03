@@ -27,6 +27,12 @@ void SceneHandler::stackScene(std::string sceneName) {
     this->scenesStack.push(scenes[sceneName]);
 }
 
+void SceneHandler::handleEvent(const sf::Event& event, sf::RenderWindow& window) {
+	if (this->scenesStack.size() != 0) {
+		this->scenesStack.top()->handleEvent(event,window);
+	}
+}
+
 void SceneHandler::popScene(void) {
     this->scenesStack.pop();
 }

@@ -15,8 +15,8 @@ Button::Button(std::string identifier, sf::Font& font, std::string buttonText, s
     this->text.setCharacterSize(26);
     this->text.setFillColor(sf::Color::White);
 
-    sf::FloatRect textRect = this->text.getLocalBounds();
-    this->text.setOrigin(textRect.left + textRect.width/2.0f, textRect.top + textRect.height/2.0f);
+    //sf::FloatRect textRect = this->text.getLocalBounds();
+    //this->text.setOrigin(textRect.left + textRect.width/2.0f, textRect.top + textRect.height/2.0f);
 
     this->setPosition(sf::Vector2f(0.0f, 0.0f));
 }

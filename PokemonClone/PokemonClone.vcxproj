@@ -29,8 +29,11 @@
     <ClInclude Include="Headers\sceneHandler.hpp" />
     <ClInclude Include="Headers\spriteObject.hpp" />
     <ClInclude Include="Headers\textObject.hpp" />
+    <ClInclude Include="Highscores.h" />
+    <ClInclude Include="StartScreen.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Highscores.cpp" />
     <ClCompile Include="Source\button.cpp" />
     <ClCompile Include="Source\character.cpp" />
     <ClCompile Include="Source\gameObject.cpp" />
@@ -41,6 +44,7 @@
     <ClCompile Include="Source\sceneHandler.cpp" />
     <ClCompile Include="Source\spriteObject.cpp" />
     <ClCompile Include="Source\textObject.cpp" />
+    <ClCompile Include="StartScreen.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
@@ -100,7 +104,7 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>F:\Y2\Q1\CPP\Repository\PokemonClone\Headers;F:\Y2\Q1\CPP\SFML\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>F:\Y2\Q1\CPP\Repository\PokemonClone;F:\Y2\Q1\CPP\Repository\PokemonClone\Headers;F:\Y2\Q1\CPP\SFML\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>SFML_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
@@ -114,7 +118,7 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>F:\Y2\Q1\CPP\Repository\PokemonClone\Headers;F:\Y2\Q1\CPP\SFML\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>F:\Y2\Q1\CPP\Repository\PokemonClone;F:\Y2\Q1\CPP\Repository\PokemonClone\Headers;F:\Y2\Q1\CPP\SFML\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>SFML_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
@@ -130,7 +134,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>F:\Y2\Q1\CPP\Repository\PokemonClone\Headers;F:\Y2\Q1\CPP\SFML\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>F:\Y2\Q1\CPP\Repository\PokemonClone;F:\Y2\Q1\CPP\Repository\PokemonClone\Headers;F:\Y2\Q1\CPP\SFML\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>SFML_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
@@ -148,7 +152,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>F:\Y2\Q1\CPP\Repository\PokemonClone\Headers;F:\Y2\Q1\CPP\SFML\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>F:\Y2\Q1\CPP\Repository\PokemonClone;F:\Y2\Q1\CPP\Repository\PokemonClone\Headers;F:\Y2\Q1\CPP\SFML\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>SFML_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>

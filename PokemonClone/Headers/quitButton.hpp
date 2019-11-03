@@ -1,3 +1,5 @@
+#pragma once
+
 #include "button.hpp"
 
 class QuitButton : public Button {
