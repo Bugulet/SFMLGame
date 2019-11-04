@@ -12,14 +12,14 @@ class SceneHandler;
 
 
 
-class StartScreen :
+class GameScreen :
 	public Scene
 {
 public:
-	StartScreen( std::string identifier,sf::RenderWindow &window);
+	GameScreen(std::string identifier, sf::RenderWindow &window);
 	void init(SceneHandler &handle);
 	//~StartScreen();
-    void update();
+	void update();
 
 private:
 	sf::RenderWindow window;

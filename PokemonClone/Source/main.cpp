@@ -27,18 +27,9 @@ int main() {
 
    
 
-	Scene testScreen("testScreen");
 
-
-	SceneHandler handler;
+	SceneHandler handler(window);
 	
-
-	StartScreen characterScreen(handler, "identifier");
-	
-	handler.addScene(characterScreen);
-	handler.addScene(testScreen);
-
-    
 
     while (window.isOpen()) {
 

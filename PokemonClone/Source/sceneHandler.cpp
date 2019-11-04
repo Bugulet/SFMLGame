@@ -1,6 +1,15 @@
 #include "sceneHandler.hpp"
 
-SceneHandler::SceneHandler() { }
+SceneHandler::SceneHandler(sf::RenderWindow &window)
+	:mainMenu("mainMenu",window)
+	,gameScene("gameScene",window)
+	,endScene("endScene")
+	,windowReference(&window)
+{
+	addScene(mainMenu);
+	addScene(gameScene);
+	mainMenu.init(*this);
+}
 
 SceneHandler::~SceneHandler() { }
 
@@ -10,6 +19,19 @@ void SceneHandler::render(sf::RenderWindow& window) const {
     }
 }
 
+
+
+void SceneHandler::StartGame() {
+	stackScene("gameScene");
+	gameScene.init(*this);
+}
+
+void SceneHandler::StartMenu() {
+	scenesStack.empty();
+	stackScene("mainMenu");
+	mainMenu.init(*this);
+}
+
 void SceneHandler::update() {
     if(this->scenesStack.size() != 0) {
         this->scenesStack.top()->update();
@@ -17,7 +39,7 @@ void SceneHandler::update() {
 }
 
 void SceneHandler::addScene(Scene& scene) {
-    this->scenes.emplace(scene.getIdentifier(), &scene);
+	this->scenes.emplace(scene.getIdentifier(), &scene);
     if(this->scenes.size() == 1) {
         this->stackScene(scene.getIdentifier());
     }

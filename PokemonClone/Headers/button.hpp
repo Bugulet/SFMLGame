@@ -6,23 +6,21 @@
 #include <SFML/Graphics/RectangleShape.hpp>
 #include <functional>
 #include "scene.hpp"
+#include <SFML/Graphics/Sprite.hpp>
 
 // typedef std::function<void()> buttonAction;
 
 class Button : public GameObject {
 
     private:
-        sf::Text text;
-        sf::Font& font;
-        sf::RectangleShape shape;
-        std::string buttonText;
+		sf::Texture texture;
+		sf::Sprite sprite;
 		
         // buttonAction action;
 		
         std::function<void()> action;
     public:
-        Button(std::string identifier, sf::Font& font, std::string buttonText, 
-                sf::Vector2f size, sf::Color color);
+		Button(std::string identifier, std::string path);
         ~Button();
 
         void handleEvent(const sf::Event& event, sf::RenderWindow& window) override;
