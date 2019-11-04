@@ -30,6 +30,8 @@ class Character {
         std::string getName() const;
         void setName(std::string name);
 
+		void setSpriteFile(std::string path);
+
         std::string getSpriteFile() const;
 };
 

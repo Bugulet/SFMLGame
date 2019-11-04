@@ -59,3 +59,7 @@ void Character::setName(std::string name) {
     this->name = name;
 }
 
+void Character::setSpriteFile(std::string path) {
+	spriteFile = path;
+}
+

@@ -20,6 +20,7 @@ class SpriteObject : public GameObject {
         
         void setPosition(sf::Vector2f position);
         void setScale(sf::Vector2f scale);
+		void setSpriteFile(std::string path);
         std::string getSpriteFile() const;
 };
 

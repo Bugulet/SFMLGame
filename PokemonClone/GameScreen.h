@@ -7,10 +7,10 @@
 #include "spriteObject.hpp"
 #include "button.hpp"
 #include "quitButton.hpp"
+#include "character.hpp"
 
+//forward declaration
 class SceneHandler;
-
-
 
 class GameScreen :
 	public Scene
@@ -22,9 +22,18 @@ public:
 	void update();
 
 private:
+
+	Character enemy;
+	SpriteObject enemySprite;
+	TextObject enemyHP;
+
+	Character player;
+	SpriteObject playerSprite;
+	TextObject playerHP;
+
 	sf::RenderWindow window;
 	QuitButton quitButton;
-	Button loadButton;
+	Button attackButton;
 
 	sf::Font font;
 
